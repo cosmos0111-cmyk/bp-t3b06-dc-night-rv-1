@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-acid-yellow">
+<title>등촌 유흥 후기 블로그 - 찐내돈내산 썰</title>
+<meta name="description" content="등촌 유흥 후기 블로그. 형이 직접 발로 뛰고 쓴 찐 후기! 놀토, 클럽, 술집 생생한 썰. 전화 010-6279-0862">
+<meta name="keywords" content="등촌 유흥, 등촌 유흥 후기, 등촌 유흥 블로그, 등촌 놀토 추천, 등촌 클럽 후기">
+<link rel="canonical" href="https://t3b06-dc-night-rv-1.vercel.app/blog">
+<meta property="og:title" content="등촌 유흥 후기 블로그 - 형이 쓴 찐 썰">
+<meta property="og:description" content="등촌 유흥 후기 블로그. 형이 직접 발로 뛰고 쓴 찐 후기! 놀토, 클럽, 술집 생생한 썰.">
+<meta property="og:url" content="https://t3b06-dc-night-rv-1.vercel.app/blog">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<style>
+/* ===== Brutalist Reset & Base ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: 'Helvetica Neue', 'Arial Narrow', Arial, sans-serif;
+  background: #1c1c1c;
+  color: #f5f5f5;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ===== Acid Yellow Theme (kr-acid-yellow) ===== */
+:root {
+  --acid: #e5ff00;
+  --acid-dark: #b3cc00;
+  --acid-light: #f2ff66;
+  --black: #0d0d0d;
+  --near-black: #1a1a1a;
+  --gray-dark: #2a2a2a;
+  --gray: #555;
+  --white: #f5f5f5;
+  --gutter: 1rem;
+  --border-w: 4px;
+}
+
+/* ===== Layout & Typography ===== */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 var(--gutter); }
+
+h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+h1 { font-size: 3.5rem; line-height: 0.9; margin-bottom: 1rem; }
+h2 { font-size: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+p { margin-bottom: 1rem; font-size: 1.05rem; }
+
+/* ===== Brutalist Elements ===== */
+.card {
+  background: var(--near-black);
+  border: var(--border-w) solid var(--acid);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 8px 8px 0 rgba(229, 255, 0, 0.15);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card:hover { box-shadow: 12px 12px 0 rgba(229, 255, 0, 0.3); transform: translate(-2px, -2px); }
+
+.btn {
+  display: inline-block;
+  background: var(--acid);
+  color: var(--black);
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0.75rem 2rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+.btn:hover { background: var(--acid-light); color: var(--near-black); transform: scale(1.02); }
+
+.tag {
+  display: inline-block;
+  background: var(--acid);
+  color: var(--black);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.highlight { color: var(--acid); font-weight: 800; }
+
+/* ===== Header / Nav ===== */
+.site-header {
+  background: var(--black);
+  border-bottom: var(--border-w) solid var(--acid);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--acid);
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-list a {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+.nav-list a:hover, .nav-list a.active { border-bottom-color: var(--acid); color: var(--acid); }
+.hamburger { display: none; flex-direction: column; cursor: pointer; }
+.hamburger span { display: block; width: 28px; height: 4px; background: var(--acid); margin: 4px 0; }
+
+/* ===== Hero Section ===== */
+.hero {
+  padding: 3rem 0 2rem;
+  border-bottom: var(--border-w) solid var(--acid-dark);
+  margin-bottom: 2rem;
+}
+.hero h1 { font-size: 4rem; }
+.hero p { font-size: 1.2rem; max-width: 700px; }
+
+/* ===== Blog Post ===== */
+.blog-post {
+  margin-bottom: 3rem;
+}
+.blog-post .meta {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.blog-post .content {
+  line-height: 1.6;
+}
+.blog-post .content p { margin-bottom: 1.2rem; }
+.blog-post blockquote {
+  border-left: 6px solid var(--acid);
+  padding: 0.75rem 1.5rem;
+  margin: 1.5rem 0;
+  background: var(--gray-dark);
+  font-style: italic;
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  margin: 2rem 0;
+}
+.faq-item {
+  border-bottom: 2px solid var(--gray-dark);
+  padding: 1rem 0;
+}
+.faq-question {
+  font-weight: 800;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-question::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--acid);
+}
+.faq-answer {
+  margin-top: 0.75rem;
+  padding-left: 0.5rem;
+  display: none;
+}
+.faq-item.open .faq-answer { display: block; }
+.faq-item.open .faq-question::after { content: '−'; }
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--black);
+  border-top: var(--border-w) solid var(--acid);
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.site-footer .phone { font-size: 1.3rem; font-weight: 800; color: var(--acid); }
+.site-footer .copy { margin-top: 0.5rem; color: var(--gray); }
+
+/* ===== Responsive 768 ===== */
+@media (max-width: 768px) {
+  .container { max-width: 100%; padding: 0 0.75rem; }
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+  .header-inner { flex-wrap: wrap; }
+  .hamburger { display: flex; }
+  .nav-list {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: var(--black);
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-top: 2px solid var(--gray-dark);
+  }
+  .nav-list.show { display: flex; }
+  .nav-list a { padding: 0.5rem 0; border-bottom: none; }
+  .hero h1 { font-size: 2.8rem; }
+  .hero p { font-size: 1rem; }
+  .card { padding: 1rem; box-shadow: 4px 4px 0 rgba(229, 255, 0, 0.15); }
+  .blog-post .content p { font-size: 0.95rem; }
+}
+
+/* ===== Hamburger Menu Toggle ===== */
+@media (max-width: 768px) {
+  .nav-list.show { display: flex; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">등촌유흥</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <nav class="nav-list" id="mainNav">
+      <a href="/">홈</a>
+      <a href="/reviews">후기</a>
+      <a href="/blog" class="active">블로그</a>
+      <a href="tel:01062790862">전화</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1>등촌 유흥<br><span class="highlight">찐 후기 블로그</span></h1>
+    <p>형이 직접 가보고, 느끼고, 돈 써보고 쓴 리얼 썰. 클럽, 놀토, 술집 할 거 없이 다 까발림. 등촌에서 놀기 전에 이거 하나만 보고 가라.</p>
+  </section>
+
+  <section class="blog-post">
+    <article class="card">
+      <h2>등촌 놀토 '더클럽' 가봤니? 형이 다녀온 썰 푼다</h2>
+      <div class="meta">
+        <span class="tag">찐후기</span>
+        <span class="tag">놀토</span>
+        <span class="tag">등촌클럽</span>
+        <span>2025.04.12</span>
+        <span>by 등촌형</span>
+      </div>
+      <div class="content">
+        <p>야, 등촌에서 놀토 간다? 그럼 '더클럽' 한 번쯤 들어봤을 거야. 근데 인터넷에 있는 후기들은 다 광고 같고 맨날 비슷비슷한 말만 있어. 그래서 내가 직접 가봤다. 돈 내고, 술 먹고, 여자랑 놀고 왔어. 진짜 리얼한 썰만 쓸게.</p>
+        <p>일단 입구부터 느낌이 쌔더라. 간판은 네온이지만 살짝 지저분한 브루탈리즘 감성? 딱 내 스타일이었어. 문 앞에서 경비 아저씨가 신분증 확인하는데 좀 빡세게 보더라고. 근데 형은 나이 있어서 괜찮았지. ㅋㅋ</p>
+        <p>들어가니까 음악이 엄청 크다. EDM + 힙합 섞어 틀어주
+</body>
+</html>
